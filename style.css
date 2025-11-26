@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(180deg, #ffe5f0, #ffd8c9);
+    font-family: "Georgia", serif;
+}
+
+.hearts {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    font-size: 20px;
+    color: #ff4d88;
+    animation: float 5s infinite ease-in;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-200px); opacity: 0; }
+}
+
+.book {
+    position: relative;
+    width: 90%;
+    max-width: 450px;
+    height: 80vh;
+    margin: 40px auto;
+    background: white;
+    box-shadow: 0 0 20px #ffb6d4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.page {
+    position: absolute;
+    inset: 0;
+    padding: 30px;
+    background: #fff7fa;
+    transition: transform 0.6s;
+    transform-origin: left center;
+}
+
+.page h1 {
+    color: #d4006e;
+}
+
+.page p {
+    font-size: 18px;
+    color: #4a4a4a;
+    margin-top: 20px;
+}
+
+.page:nth-child(n+2) {
+    transform: rotateY(180deg);
+}
+
+.next-book {
+    margin-top: 40px;
+    display: inline-block;
+    padding: 15px 25px;
+    background: #ff4d88;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
