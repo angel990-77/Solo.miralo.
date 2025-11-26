@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#ffd6e8, #ffb6d9);
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+#book {
+    width: 90%;
+    height: 95vh;
+    margin: auto;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.page {
+    min-height: 90vh;
+    padding: 20px;
+    border-bottom: 1px solid #ff97c2;
+}
+
+h1, h2 {
+    color: #d85b8a;
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #ff6fa9;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
